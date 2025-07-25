@@ -22,7 +22,7 @@ const Weather = () => {
             setError('');
         }catch(err){
             console.log(err)
-            //console.log('there was an error or the city was not found')
+            console.log('there was an error or the city was not found')
             setError('there was an error or the city was not found')
         }
     }
