@@ -17,7 +17,7 @@ const Weather = () => {
     const fetchData = async(query)=>{
         try{
             const response = await axios.get(`${apiUrl}?key=${apiKey}&q=${query}&days=1`);
-            console.log(response.data.forecast.forecastday[0].hour)
+            //console.log(response.data.forecast.forecastday[0].hour)
             setWeatherData(response.data);
             setError('');
         }catch(err){
